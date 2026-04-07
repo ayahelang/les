@@ -1,85 +1,45 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO -->
-  <title>Kursus Privat Komputer & Bahasa Inggris | Teddy Mulyana</title>
-  <meta name="description" content="Kursus privat komputer dan bahasa Inggris ke rumah. Cocok untuk siswa, mahasiswa, karyawan, dan ibu rumah tangga.">
-  <meta name="keywords" content="kursus komputer, kursus bahasa inggris, les privat, kursus ke rumah">
-  <meta name="author" content="Teddy Mulyana">
-
-  <!-- Open Graph (biar bagus kalau dishare) -->
-  <meta property="og:title" content="Kursus Privat Komputer & Bahasa Inggris">
-  <meta property="og:description" content="Belajar langsung dari praktisi IT berpengalaman 20+ tahun">
-  <meta property="og:type" content="website">
-
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<header class="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Kursus Privat Komputer & Bahasa Inggris</h1>
-      <p>Belajar langsung dari praktisi IT berpengalaman 20+ tahun</p>
-      <button onclick="contactWA()">Daftar Sekarang</button>
-    </div>
-
-    <div class="hero-image">
-      <!-- GANTI FOTO INI -->
-      <img src="foto-profile.jpg" alt="Teddy Mulyana">
-    </div>
-  </div>
-</header>
-
-<section class="container">
-  <h2>Profil Pengajar</h2>
-  <p>
-    Teddy Mulyana adalah pengajar dan praktisi IT dengan pengalaman lebih dari 20 tahun
-    dalam dunia teknologi dan pendidikan.
-  </p>
-</section>
-
-<section class="container grid">
-  <div class="card">
-    <h3>Kursus Komputer</h3>
-    <ul>
-      <li>Dasar komputer & internet</li>
-      <li>Microsoft Office</li>
-      <li>Desain & editing</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Bahasa Inggris</h3>
-    <ul>
-      <li>Conversation</li>
-      <li>English for work</li>
-      <li>Confidence speaking</li>
-    </ul>
-  </div>
-</section>
-
-<section class="container">
-  <h2>Keunggulan</h2>
+<section id="materi" class="section light">
+  <h2>Materi Pembelajaran</h2>
   <div class="grid">
-    <div class="card">Privat ke rumah</div>
-    <div class="card">Fleksibel</div>
-    <div class="card">Praktik langsung</div>
-    <div class="card">Cocok semua usia</div>
+    <div class="card">
+      <h3>Modul Komputer Dasar</h3>
+      <button onclick="downloadFile()">Download</button>
+    </div>
+    <div class="card">
+      <h3>Modul Bahasa Inggris</h3>
+      <button onclick="downloadFile()">Download</button>
+    </div>
   </div>
 </section>
 
-<section class="cta">
-  <h2>Mulai Belajar Sekarang</h2>
-  <p>Konsultasi GRATIS via WhatsApp</p>
-  <button onclick="contactWA()">Hubungi Sekarang</button>
+<!-- TESTIMONI -->
+<section id="testimoni" class="section">
+  <h2>Testimoni</h2>
+  <div class="grid">
+    <div class="card">
+      <p>"Anak saya jadi lebih percaya diri menggunakan komputer"</p>
+      <strong>- Orang Tua Murid</strong>
+    </div>
+    <div class="card">
+      <p>"Materi mudah dipahami dan sangat aplikatif"</p>
+      <strong>- Mahasiswa</strong>
+    </div>
+    <div class="card">
+      <p>"Pengajar sabar dan berpengalaman"</p>
+      <strong>- Karyawan</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="kontak" class="cta">
+  <h2>Siap Mulai?</h2>
+  <button onclick="contactWA()">Hubungi WhatsApp</button>
 </section>
 
 <footer>
-  <p>© 2026 Teddy Mulyana | les.silverhawk.web.id</p>
+  <p>© 2026 Teddy Mulyana</p>
 </footer>
 
 <script src="script.js"></script>
