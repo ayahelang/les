@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Kursus Privat Komputer & Bahasa Inggris | Teddy Mulyana</title>
-  <meta name="description" content="Kursus privat komputer & bahasa Inggris ke rumah. Praktis dan langsung bisa dipakai.">
+  <title>Kursus Privat | Teddy Mulyana</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,61 +11,78 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">Les Privat</div>
+  <div class="logo">Silverhawk Course</div>
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#lesson">Lesson Plan</a></li>
-    <li><a href="#materi">Materi</a></li>
+    <li><a href="#paket">Paket</a></li>
+    <li><a href="#silabus">Silabus</a></li>
     <li><a href="#testimoni">Testimoni</a></li>
-    <li><a href="#kontak">Kontak</a></li>
+    <li><a href="#group">Group</a></li>
+    <li><a href="#kontak">Daftar</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <header id="home" class="hero">
   <div class="hero-content">
-    <div class="hero-text">
-      <h1>Kursus Privat Komputer & Bahasa Inggris</h1>
-      <p>Belajar langsung dari praktisi IT berpengalaman 20+ tahun</p>
-      <button onclick="contactWA()">Daftar Sekarang</button>
+    <div>
+      <h1>Les Privat Komputer & Bahasa Inggris</h1>
+      <p>Anti gaptek • Siap kerja • Lebih percaya diri</p>
+
+      <div class="badges">
+        <span>⭐ 20+ Tahun</span>
+        <span>🏠 Privat ke Rumah</span>
+        <span>🎯 Fokus Hasil</span>
+      </div>
+
+      <button onclick="contactWA()">Konsultasi Gratis</button>
     </div>
-    <div class="hero-image">
-      <img src="foto-profile.jpg" alt="Foto Teddy">
-    </div>
+
+    <!-- FOTO (PASTIKAN NAMA FILE SAMA) -->
+    <img src="foto-profile.jpg.jpg" alt="foto">
   </div>
 </header>
 
-<!-- LESSON -->
-<section id="lesson" class="section">
-  <h2>Lesson Plan</h2>
+<!-- PAKET -->
+<section id="paket" class="section">
+  <h2>Paket Kursus</h2>
+
   <div class="grid">
-    <div class="card">
-      <h3>Basic</h3>
-      <p>Komputer & Internet dasar</p>
+
+    <div class="card highlight">
+      <h3>⭐ Office Skill</h3>
+      <p>12x • 90 menit</p>
+      <p class="price">Rp 70rb (Bogor) / Rp 90rb (Depok)</p>
+      <p class="promo">Paket Rp 800rb</p>
+      <button onclick="contactWA()">Ambil</button>
     </div>
-    <div class="card">
-      <h3>Office</h3>
-      <p>Word, Excel, PowerPoint</p>
+
+    <div class="card highlight">
+      <h3>🚀 Smart Digital</h3>
+      <p>16x • 90 menit</p>
+      <p class="price">Rp 70rb / Rp 90rb</p>
+      <p class="promo">Paket Rp 1.100rb</p>
+      <button onclick="contactWA()">Ambil</button>
     </div>
+
     <div class="card">
-      <h3>Creative</h3>
-      <p>Canva & Editing Video</p>
+      <h3>🔥 Future Skill</h3>
+      <p>20x • 120 menit</p>
+      <p class="price">Rp 70rb / Rp 90rb</p>
+      <p class="promo">Paket Rp 1.300rb</p>
+      <button onclick="contactWA()">Ambil</button>
     </div>
+
   </div>
 </section>
 
-<!-- MATERI -->
-<section id="materi" class="section light">
-  <h2>Materi Download</h2>
+<!-- SILABUS -->
+<section id="silabus" class="section light">
+  <h2>Silabus</h2>
   <div class="grid">
-    <div class="card">
-      <h3>Modul Komputer</h3>
-      <a href="modul-komputer.pdf" download class="btn">Download</a>
-    </div>
-    <div class="card">
-      <h3>Modul Bahasa Inggris</h3>
-      <a href="modul-english.pdf" download class="btn">Download</a>
-    </div>
+    <div class="card">Basic Komputer</div>
+    <div class="card">Microsoft Office</div>
+    <div class="card">Desain & Video</div>
   </div>
 </section>
 
@@ -75,36 +90,42 @@
 <section id="testimoni" class="section">
   <h2>Testimoni</h2>
   <div class="grid">
-    <div class="card">
-      <p>"Anak saya jadi lebih percaya diri!"</p>
-      <strong>- Orang Tua</strong>
-    </div>
-    <div class="card">
-      <p>"Belajarnya santai tapi efektif"</p>
-      <strong>- Mahasiswa</strong>
-    </div>
-    <div class="card">
-      <p>"Langsung bisa dipakai kerja"</p>
-      <strong>- Karyawan</strong>
-    </div>
+    <div class="card">"Anak saya jadi lebih pede"</div>
+    <div class="card">"Mudah dipahami"</div>
+    <div class="card">"Langsung bisa kerja"</div>
+  </div>
+</section>
+
+<!-- GROUP -->
+<section id="group" class="section light">
+  <h2>Promo Group</h2>
+  <div class="card">
+    <p>4 orang → Diskon 20%</p>
+    <p>Rp70rb → Rp56rb</p>
+    <p>Rp90rb → Rp72rb</p>
+    <button onclick="contactWA()">Ambil Promo</button>
   </div>
 </section>
 
 <!-- CTA -->
 <section id="kontak" class="cta">
-  <h2>Hubungi Sekarang</h2>
-  <button onclick="contactWA()">WhatsApp</button>
+  <h2>Slot Terbatas</h2>
+  <button onclick="contactWA()">WhatsApp Sekarang</button>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Teddy Mulyana</p>
-      <p class="powered">
-        Powered by
-        <a href="https://silverhawk.web.id" target="_blank">
-          Silverhawk Network
-        </a>
-      </p>
+  <p>
+    Powered by 
+    <a href="https://silverhawk.web.id" target="_blank">
+      Silverhawk Network
+    </a>
+  </p>
 </footer>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6285158822803" class="wa-float" target="_blank">💬</a>
 
 <script src="script.js"></script>
 </body>
