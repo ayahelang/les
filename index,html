@@ -1,0 +1,196 @@
+<!-- =========================
+FILE 1: index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Kursus Privat Komputer & Bahasa Inggris | Teddy Mulyana</title>
+  <meta name="description" content="Kursus privat komputer dan bahasa Inggris ke rumah. Cocok untuk siswa, mahasiswa, karyawan, dan ibu rumah tangga.">
+  <meta name="keywords" content="kursus komputer, kursus bahasa inggris, les privat, kursus ke rumah">
+  <meta name="author" content="Teddy Mulyana">
+
+  <!-- Open Graph (biar bagus kalau dishare) -->
+  <meta property="og:title" content="Kursus Privat Komputer & Bahasa Inggris">
+  <meta property="og:description" content="Belajar langsung dari praktisi IT berpengalaman 20+ tahun">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Kursus Privat Komputer & Bahasa Inggris</h1>
+      <p>Belajar langsung dari praktisi IT berpengalaman 20+ tahun</p>
+      <button onclick="contactWA()">Daftar Sekarang</button>
+    </div>
+
+    <div class="hero-image">
+      <!-- GANTI FOTO INI -->
+      <img src="foto-profile.jpg" alt="Teddy Mulyana">
+    </div>
+  </div>
+</header>
+
+<section class="container">
+  <h2>Profil Pengajar</h2>
+  <p>
+    Teddy Mulyana adalah pengajar dan praktisi IT dengan pengalaman lebih dari 20 tahun
+    dalam dunia teknologi dan pendidikan.
+  </p>
+</section>
+
+<section class="container grid">
+  <div class="card">
+    <h3>Kursus Komputer</h3>
+    <ul>
+      <li>Dasar komputer & internet</li>
+      <li>Microsoft Office</li>
+      <li>Desain & editing</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Bahasa Inggris</h3>
+    <ul>
+      <li>Conversation</li>
+      <li>English for work</li>
+      <li>Confidence speaking</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Keunggulan</h2>
+  <div class="grid">
+    <div class="card">Privat ke rumah</div>
+    <div class="card">Fleksibel</div>
+    <div class="card">Praktik langsung</div>
+    <div class="card">Cocok semua usia</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Mulai Belajar Sekarang</h2>
+  <p>Konsultasi GRATIS via WhatsApp</p>
+  <button onclick="contactWA()">Hubungi Sekarang</button>
+</section>
+
+<footer>
+  <p>© 2026 Teddy Mulyana | les.silverhawk.web.id</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- =========================
+FILE 2: styles.css
+========================= -->
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+}
+
+.hero-text button {
+  padding: 12px 20px;
+  border: none;
+  background: white;
+  color: #0d6efd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cta {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta button {
+  padding: 12px 20px;
+  border: none;
+  background: white;
+  color: #0d6efd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 180px;
+  }
+}
+
+
+<!-- =========================
+FILE 3: script.js
+========================= -->
+function contactWA() {
+  window.open("https://wa.me/6285158822803", "_blank");
+}
