@@ -35,3 +35,16 @@ function contactWA(){
   document.querySelectorAll(".fade-in").forEach(el=>{
     observer.observe(el);
   });
+
+/* LESSON INTERAKTIF */
+document.querySelectorAll(".lesson-header").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});

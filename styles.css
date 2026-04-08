@@ -227,3 +227,35 @@ iframe {
   margin-top: 20px;
   border-radius: 10px;
 }
+
+/* LESSON INTERAKTIF */
+.lesson-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.lesson-header {
+  width: 100%;
+  padding: 15px;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.lesson-header:hover {
+  background: #0a58ca;
+}
+
+.lesson-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  padding: 0 15px;
+  border-radius: 8px;
+  transition: 0.4s;
+}
