@@ -199,3 +199,31 @@ body {
       margin-top: 20px;
     }
   }
+
+  /* ACCORDION */
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  background: white;
+  padding: 0 15px;
+  border-radius: 8px;
+}
+
+/* PDF */
+iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+}
